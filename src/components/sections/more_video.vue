@@ -43,7 +43,6 @@ function handleVideoError(event, title) {
         <el-row :gutter="20" justify="center">
           <el-col v-for="(video, index) in videos" :key="index" :xs="24" :sm="20" :md="16" :lg="12" :xl="12">
             <div class="video-wrapper">
-              <p>{{ getVideoUrl(video.src) }}</p> <!-- 打印路径，确保 Vue 解析正确 -->
               <video 
                 controls 
                 muted 
