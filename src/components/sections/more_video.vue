@@ -22,8 +22,14 @@ const videos = [
         <el-row :gutter="20" justify="center">
           <el-col v-for="(video, index) in videos" :key="index" :xs="24" :sm="20" :md="16" :lg="12" :xl="12">
             <div class="video-wrapper">
-              <video controls muted preload playsinline>
+              <video 
+                controls 
+                muted 
+                preload="metadata" 
+                playsinline
+                :onerror="(event) => handleVideoError(event, video.title)">
                 <source :src="video.src" type="video/mp4" />
+                Your browser does not support the video tag.
               </video>
               <h3 class="video-title">{{ video.title }}</h3>
             </div>
@@ -33,6 +39,13 @@ const videos = [
     </el-row>
   </div>
 </template>
+
+<script>
+function handleVideoError(event, title) {
+  console.error(`Error loading video: ${title}`);
+  event.target.outerHTML = `<p style="color:red; text-align:center;">Failed to load video: ${title}</p>`;
+}
+</script>
 
 <style scoped>
 .video-wrapper {
@@ -50,8 +63,9 @@ const videos = [
 }
 
 video {
-  aspect-ratio: 16 / 9;
   width: 100%;
   max-width: 100%; /* 确保视频不会超出容器 */
+  aspect-ratio: 16 / 9;
+  background-color: black; /* 避免加载失败时黑屏 */
 }
 </style>
