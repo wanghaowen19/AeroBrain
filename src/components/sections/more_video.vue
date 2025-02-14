@@ -1,11 +1,11 @@
 <script setup>
 const videos = [
-  { src: "/video/video_final/Find_extinguisher_1.mp4", title: "Find a fire extinguisher" },
-  { src: "/video/video_final/Find_Cone_record_1.mp4", title: "Find a cone" },
-  { src: "/video/video_final/Find_elerecord_1.mp4", title: "Find an electrical Panel" },
-  { src: "/video/video_final/Find_telephone_1.mp4", title: "Find a telephone on the table" },
-  { src: "/video/video_final/Find_pipes_1.mp4", title: "Find some plastic pipes on the shelf" },
-  { src: "/video/video_final/Find_fence_1.mp4", title: "Find a fence" }
+  { src: "/public/video/video_final/Find_extinguisher_1.mp4", title: "Find a fire extinguisher" },
+  { src: "/public/video/video_final/Find_Cone_record_1.mp4", title: "Find a cone" },
+  { src: "/public/video/video_final/Find_elerecord_1.mp4", title: "Find an electrical Panel" },
+  { src: "/public/video/video_final/Find_telephone_1.mp4", title: "Find a telephone on the table" },
+  { src: "/public/video/video_final/Find_pipes_1.mp4", title: "Find some plastic pipes on the shelf" },
+  { src: "/public/video/video_final/Find_fence_1.mp4", title: "Find a fence" }
 ];
 
 function getVideoUrl(src) {
