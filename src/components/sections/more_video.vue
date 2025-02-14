@@ -37,7 +37,6 @@ function handleVideoError(event, title) {
     <el-row justify="center">
       <h1 class="section-title">More Video Demos</h1>
     </el-row>
-
     <el-row justify="center">
       <el-col :xs="24" :sm="20" :md="16" :lg="12" :xl="12">
         <el-row :gutter="20" justify="center">
