@@ -1,0 +1,6 @@
+# System Overview
+
+We propose an autonomous UAV navigation system combining global decision-making via MLMs with local path planning using DRL, as shown in the Fig. 1. The UAV perceives its environment through camera, constructing a semantic map and receiving human instructions for autonomous navigation.The Sensing LLM processes instructions and filters task-relevant targets, while the Planning MLM integrates instructions, selected targets, and environmental data to infer the optimal movement direction.        For path planning, the system considers historical trajectory distance, Euclidean Signed Distance Field (ESDF) , MLM-predicted direction, and semantic weight to compute the optimal target point. The SAC-based algorithm then optimizes motion planning using depth, UAV, and target states.       This framework enables UAVs to efficiently interpret human instructions and autonomously navigate complex environments by combining high-level decision-making with DRL-based path optimization.
+
+
+![](./pictureAeroBrain/frame_heavy_final3.png)

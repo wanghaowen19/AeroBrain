@@ -16,5 +16,8 @@ import abstract from '../mds/abstract.mdx';
 </template>
 
 <style scoped>
-
+/* 选择摘要内容所在的 el-col 元素并应用两端对齐 */
+.el-col {
+  text-align: justify;
+}
 </style>

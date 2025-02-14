@@ -1,0 +1,42 @@
+# Experiments
+
+<div align="center" style="margin-bottom: 5px;">TABLE I: Performance Comparison of Autonomous UAV Navigation Algorithms</div>
+| Methods            | TL ↓  | NE ↓  | SR ↑  | CR ↓  | SPL ↑  |
+|--------------------|-------|-------|-------|-------|--------|
+| Random             | 32.78 | 3.20  | 11.11 | 66.67 | 5.67   |
+| VisualGLM          | 29.21 | 3.29  | 54.26 | 36.17 | 36.13  |
+| MiniGPT-4          | 31.15 | 3.31  | 55.56 | 31.48 | 34.50  |
+| MiniGPT-v2         | 28.65 | 2.92  | 53.57 | 29.76 | 41.16  |
+| Instruct-Nav       | **20.26** | 3.25  | 61.67 | 31.67 | 52.90  |
+| **AeroBrain (ours)** | 20.82 | **2.87** | **75.93** | **16.67** | **58.78** |
+
+&nbsp;
+
+<div align="center" style="margin-bottom: 5px;">TABLE II: Evaluation of Different Large Model Combinations</div>
+| Large Models Combination         | TL ↓  | NE ↓  | SR ↑  | CR ↓  | SPL ↑  |
+|----------------------------------|-------|-------|-------|-------|--------|
+| Llama3.3 70B + Llama3.2 11B      | 37.24 | 3.06  | 40.91 | 59.09 | 17.05  |
+| DeepSeek-V3 + Qwen2-VL 72B       | 21.66 | 3.30  | 65.22 | 34.78 | 53.60  |
+| GPT-3.5 + GPT-4o                 | 21.24 | 2.87  | 66.67 | 29.17 | 51.71  |
+| **DeepSeek-V3 + GPT-4o (ours)**  | **20.82** | **2.87** | **75.93** | **16.67** | **58.78** |
+
+&nbsp;
+<div align="center" style="margin-bottom: 5px;">TABLE III: Comparison of UAV Path Planning Algorithms</div>
+| Path Planning Alg. in AeroBrain    | TL ↓  | NE ↓  | SR ↑  | CR ↓  | SPL ↑  |
+|----------------------------------|-------|-------|-------|-------|--------|
+| w/o path planning                | 27.94 | 3.10  | 26.67 | 46.67 | 21.26  |
+| Fast-Planner                     | 26.16 | 3.35  | 47.06 | 29.41 | 30.96  |
+| Ego-Planner                      | 23.19 | 3.27  | 56.25 | 18.75 | 39.15  |
+| Ego-Swarm (N = 1)                | 22.95 | 3.63  | 53.85 | **15.38** | 39.87  |
+| PPO                              | 21.57 | 2.89  | 73.21 | 17.86 | 58.33  |
+| DDPG                             | 22.60 | **2.84**  | 72.92 | 18.75 | 53.28  |
+| **SAC (ours)**                   | **20.82** | 2.87 | **75.93** | 16.67 | **58.78** |
+
+&nbsp;
+<div align="center" style="margin-bottom: 5px;">TABLE IV: Ablation Study on the Impact of Historical Information</div>
+| Methods                          | TL ↓  | NE ↓  | SR ↑  | CR ↓  | SPL ↑  |
+|----------------------------------|-------|-------|-------|-------|--------|
+| w/o PP                           | 20.98 | 2.90  | 68.75 | 26.56 | 48.62  |
+| w/o PT                           | 22.09 | 2.99  | 51.72 | 34.48 | 37.50  |
+| w/o PT and PP                    | 26.86 | 3.15  | 56.04 | 24.18 | 21.83  |
+| **AeroBrain (ours)**                      | **20.82** | **2.87** | **75.93** | **16.67** | **58.78** |
