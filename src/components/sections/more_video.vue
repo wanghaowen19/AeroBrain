@@ -7,12 +7,15 @@ const videos = [
   { src: "/video/video_final/Find_pipes_1.mp4", title: "Find some plastic pipes on the shelf" },
   { src: "/video/video_final/Find_fence_1.mp4", title: "Find a fence" }
 ];
+
+function getVideoUrl(src) {
+  return `${window.location.origin}${src}`; // 确保是完整路径
+}
 </script>
 
 <template>
   <div>
     <el-divider />
-
     <el-row justify="center">
       <h1 class="section-title">More Video Demos</h1>
     </el-row>
@@ -26,10 +29,9 @@ const videos = [
                 controls 
                 muted 
                 preload="metadata" 
-                playsinline
+                playsinline 
                 :onerror="(event) => handleVideoError(event, video.title)">
-                <source :src="video.src" type="video/mp4" />
-                Your browser does not support the video tag.
+                <source :src="getVideoUrl(video.src)" type="video/mp4" />
               </video>
               <h3 class="video-title">{{ video.title }}</h3>
             </div>
@@ -50,8 +52,8 @@ function handleVideoError(event, title) {
 <style scoped>
 .video-wrapper {
   display: flex;
-  flex-direction: column; /* 确保视频和标题垂直排列 */
-  align-items: center; /* 让内容居中 */
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   margin: 20px 0;
 }
@@ -64,8 +66,8 @@ function handleVideoError(event, title) {
 
 video {
   width: 100%;
-  max-width: 100%; /* 确保视频不会超出容器 */
+  max-width: 100%;
   aspect-ratio: 16 / 9;
-  background-color: black; /* 避免加载失败时黑屏 */
+  background-color: black;
 }
 </style>
