@@ -16,7 +16,7 @@
         <!-- local -->
         <el-container class="video-container">
           <video controls muted preload playsinline>
-            <source src="/video/video_final/Find_extinguisher_1.mp4" type="video/mp4">
+            <source src="/video/presentation.mp4" type="video/mp4">
           </video>
         </el-container>
         
