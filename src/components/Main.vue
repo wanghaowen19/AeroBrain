@@ -50,19 +50,20 @@ export default {
 <template>
   <Title/>
   <!-- <Carousel/> -->
-  <Video/>
+  <!-- <Video/> -->
 
-  <Abstract/>
+  <!-- <Abstract/>
   <systemoverview_latex/>
   <Markdown_systemivervuew/>
-  <Markdown_experiment/>
+  <Markdown_experiment/> -->
 
-  <!-- <Abstract_simplify/>
+  <Abstract_simplify/>
   <systemoverview_latex_simplify/>
   <Markdown_systemivervuew_simplify/>
-  <Markdown_experiment_simplify/> -->
+  <Markdown_experiment_simplify/>
   
   <more_video/>
-  <!-- <Markdown_conclusion_simplify/> -->
-  <Markdown_conclusion/>
+
+  <Markdown_conclusion_simplify/>
+  <!-- <Markdown_conclusion/> -->
 </template>
