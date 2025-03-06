@@ -23,84 +23,66 @@ const btn_color = '#444444'
 
 // 作者清单（包含作者姓名、头像、主页、地址序号）
 const authors = [
-  // {
-  //   name: "Haowen Wang",
-  //   icon: "",
-  //   homepage: "",
-  //   address_flag: "1"
-  // },
-  // {
-  //   name: "Junyu Wei",
-  //   icon: "",
-  //   homepage: "",
-  //   address_flag: "2"
-  // },
-  // {
-  //   name: "Jiangyi Qin",
-  //   icon: "",
-  //   homepage: "",
-  //   address_flag: "3"
-  // },
-  // {
-  //   name: "Ni Zhu",
-  //   icon: "",
-  //   homepage: "",
-  //   address_flag: "4"
-  // },
-  // {
-  //   name: "Zongqing Zhao",
-  //   icon: "",
-  //   homepage: "",
-  //   address_flag: "2"
-  // },
-  // {
-  //   name: "Zhuoyuan Wu",
-  //   icon: "",
-  //   homepage: "",
-  //   address_flag: "2"
-  // },
-  // {
-  //   name: "Shiqi Li",
-  //   icon: "",
-  //   homepage: "",
-  //   address_flag: "2"
-  // },
-  // {
-  //   name: "Zhiqiang Wang",
-  //   icon: "",
-  //   homepage: "",
-  //   address_flag: "5"
-  // }
+  {
+    name: "Haowen Wang",
+    icon: "",
+    homepage: "",
+    address_flag: "1"
+  },
+  {
+    name: "Junyu Wei",
+    icon: "",
+    homepage: "",
+    address_flag: "1"
+  },
+  {
+    name: "Min Tang",
+    icon: "",
+    homepage: "",
+    address_flag: "2"
+  },
+  {
+    name: "Ruichen Zhang",
+    icon: "",
+    homepage: "",
+    address_flag: "2"
+  },
+  {
+    name: "Shiqi Li",
+    icon: "",
+    homepage: "",
+    address_flag: "1"
+  },
 ]
 
 // 地址清单（包含地址名称、头像、主页、地址序号）
-const addresses = [
-  // {
-  //   address_flag: "1",
-  //   name: "Peking University",
-  //   icon: "./icon/home.png",
-  //   homepage: "https://github.com/hmuniversity"
-  // },
-  // {
-  //   address_flag: "2",
-  //   name: "IKUN University",
-  //   icon: "./icon/ikun.avif",
-  //   homepage: "https://www.bilibili.com/video/BV178411Y7QB"
-  // },
-]
+// const addresses = [
+//   {
+//     address_flag: "1",
+//     name: "Peking University",
+//     icon: "./icon/home.png",
+//     homepage: "https://github.com/hmuniversity"
+//   },
+//   {
+//     address_flag: "2",
+//     name: "IKUN University",
+//     icon: "./icon/ikun.avif",
+//     homepage: "https://www.bilibili.com/video/BV178411Y7QB"
+//   },
+// ]
 
 // 共一和通讯提示
 const con_and_corresponding_author = 
   ""
 
-// const school1 = 
-//   "1 School of Electronic, Peking University, Beijing, China."
+const school1 = 
+  "1 College of	Intelligence Science and Technology, National University of Defense Technology, Changsha, China."
 
-// const school2 = 
-//   "2 College of	Intelligence Science and Technology, National University of Defense Technology, Changsha, China."
+const school2 = 
+  "2 National Innovation Institute of Defense Technology,	Academy of Military Science, Beijing, China."
 
 //   const school3 = 
-//   "3 National Innovation Institute of Defense Technology	Academy of Military Science, Beijing, China."
+//   "2 National Innovation Institute of Defense Technology	Academy of Military Science, Beijing, China."
 
 //   const school4 = 
 //   "4 AME-GEOLOC, Université Gustave Eiffel, Pairs, France"
